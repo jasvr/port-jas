@@ -497,6 +497,10 @@ body:not(.user-is-tabbing) a:focus {
         flex: 1;
         margin: 0 0 0 10rem;
     }
+    .print__work__image-box {
+        flex: 1;
+        margin:  0 0 10rem 0;
+    }
 }
 
 @media(max-width: 900px) {
@@ -520,15 +524,52 @@ body:not(.user-is-tabbing) a:focus {
     max-width: 18rem;
 }
 
+.logo-list{
+    display: flex;
+    justify-content: space-around;
+}
+
+.logo-div p{
+    color: blue;
+    text-align: center;
+}
+
+.logo-div img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
 @media(max-width: 1240px) {
     .client__logos {
         overflow-x: scroll;
         padding: var(--gutter-normal);
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
     }
 
     .client__logo:not(:last-of-type) {
         margin-right: var(--gutter-medium);
     }
+
+
+    .logo-div{
+        width: 100px;
+    }
+    
+    p.skills{
+        text-align: center;
+    
+}
+
+@media (min-width: 1240px) {
+    .logo-div{
+        width: 20px;
+    }
+
+}
 }
 
 /* --------------------------------------- */
